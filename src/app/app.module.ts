@@ -11,6 +11,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { MenuComponent } from '../components/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { UserCrudComponent } from './pages/user-crud/user-crud.component';
+import { ModalFormUserComponent } from './pages/user-crud/modal-form-user/modal-form-user.component';
+import { ModalViewUserComponent } from './pages/user-crud/modal-view-user/modal-view-user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { RegisterComponent } from './pages/register/register.component';
     MenuComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    UserCrudComponent,
+    ModalFormUserComponent,
+    ModalViewUserComponent
   ],
   imports: [
     BrowserModule,

@@ -1,27 +1,70 @@
-# AngularApp2
+### Crude completo com angular 17.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+#### Referências
+https://www.udemy.com/course/curso-angular-17-crud-completo-com-firebase/learn/lecture/41591896#overview
 
-## Development server
+``` Ultimo visto
+https://www.udemy.com/course/curso-angular-17-crud-completo-com-firebase/learn/lecture/41966992#questions
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Passos iniciais 
 
-## Code scaffolding
+[x] npm install -g @angular/cli
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[x] npm install -g @angular/cli --force
 
-## Build
+[x] npx ng new angular-app2 --no-standalone
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+[x] ng new angular-app2
 
-## Running unit tests
+#### ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Comandos Angular
+configurar o tsconfig.ts
+  "strictPropertyInitialization": false,
+ng serve
 
-## Running end-to-end tests
+import app.module.ts
+    FormsModule,
+    ReactiveFormsModule,
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[x] ng add @ng-bootstrap/ng-bootstrap
+[x] https://ng-bootstrap.github.io/#/home
 
-## Further help
+[x ] ng g c components/menu
+[x] imagens
+[x] ng g c pages/login
+[x] ng g c pages/home
+[x] ng g c pages/register
+[x] ng g c pages/user-crud
+[] ng g c pages/user-crud/modal-form-user
+[] ng g c pages/user-crud/modal-view-user
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[] ng g service services/users
+[] ng g interface services/user
+
+[] ng g environments
+
+#### Firebase
+apelido firebase : app-angular
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCJfvVYnGltl2xVmCc_4PRQV7XaClKv73E",
+  authDomain: "grud-angular.firebaseapp.com",
+  projectId: "grud-angular",
+  storageBucket: "grud-angular.appspot.com",
+  messagingSenderId: "186347792529",
+  appId: "1:186347792529:web:b915f3bad6f822d1f2b730",
+  measurementId: "G-EDLLB0N22E"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+#### Dependências
+
+npm install firebase [x]
+ng add @angular/fire [x]
+
+https://material.angular.io/components/table/examples

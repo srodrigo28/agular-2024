@@ -1,0 +1,87 @@
+<app-menu></app-menu>
+
+<div class="container-fluid pt-3">
+    <div class="row">
+        <div class="col">
+            <h1 class="titulo mb-5">Cadastro de usuários</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+                <div class="row mb-3">
+                  <div class="col">
+                    <input class="form-control" (keyup)="applyFilter($event)" placeholder="Nome" #input>
+                  </div>
+                  <div class="col-2">
+                    <input class="form-control text-center" (keyup)="applyFilter($event)" placeholder="CPF" #input>
+                  </div>
+                  <div class="col-2">
+                    <select class="form-control text-center">
+                      <option value="0">Sexo</option>
+                      <option value="1">Masculino</option>
+                      <option value="2">Feminino</option>
+                    </select>
+                  </div>
+                  <div class="col-2">
+                    <select class="form-control text-center">
+                      <option [defaultSelected]>Cidade</option>
+                      <option value="1">Aparecida</option>
+                      <option value="1">Goiânia</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="btn btn-primary add-crud">Adicionar</div>
+                  </div>
+                </div>
+            
+
+            <table class="table table-responsive table-striped mw-100">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Nome</th>
+                  <th>CPF</th>
+                  <th>Sexo</th>
+                  <th>Cidade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Daiane Oliveira</td>
+                  <td>000.000.000-00</td>
+                  <td>Feminino</td>
+                  <td>Goiânia</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Aline Silva</td>
+                  <td>000.000.000-00</td>
+                  <td>Feminino</td>
+                  <td>Goiânia</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="pag d-flex justify-content-center">
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Anteior</span>
+                    </li>
+                    <li class="page-item"><a class="page-link">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link">2</span>
+                    </li>
+                    <li class="page-item"><a class="page-link">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link">Próximo</a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
